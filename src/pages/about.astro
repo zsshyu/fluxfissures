@@ -1,23 +1,27 @@
 ---
+import { getEntry, render } from 'astro:content'
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import { formatDate } from '~/utils'
 
+const { translate: t } = Astro.locals
+const aboutPost = await getEntry('spec', 'about')
+if (!aboutPost) {
+  throw new Error('No about post found')
+}
+const { Content } = await render(aboutPost)
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Flux Fissures</title>
-	</head>
-	<body>
-        <a href="/">Home</a>
-		<a href="/blog">Blog</a>
-		<a href="/about/">About</a>
-
-		<h1>About</h1>
-		<p>I'm Shyu, a researcher & designer of game, play and space.</p>
-		<p>This is my website, my mindset space and my commonplace notebook.</p>
-	</body>
-</html>
+<LayoutDefault>
+  <header flex="~ col gap-2">
+    <h1 class="post-title">
+      <a class="not-prose">{aboutPost.data.title}</a>
+    </h1>
+    <div class="text-3.5">
+      <span>{t('posted_at')}</span>
+      <time>{formatDate(aboutPost.data.pubDate)}</time>
+    </div>
+  </header>
+  <article class="prose">
+    <Content />
+  </article>
+</LayoutDefault>
