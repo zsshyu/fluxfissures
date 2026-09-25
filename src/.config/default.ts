@@ -5,45 +5,29 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: '活版印字',
-    subtitle: 'Typography',
-    author: 'Moeyua',
-    description: 'Rediscory the beauty of typography',
-    website: 'https://astro-theme-typography.vercel.app/',
+    title: 'Flux Fissures',
+    subtitle: '流隙',
+    author: '赵晟苏',
+    description: '探索游戏本体/文化之间缝隙的实验阵地',
+    website: 'https://fluxfissures.vercel.app/',
     pageSize: 5,
     socialLinks: [
-      {
-        name: 'github',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'rss',
-        href: '/atom.xml',
-      },
-      {
-        name: 'twitter',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'mastodon',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
     ],
     navLinks: [
       {
-        name: 'Posts',
+        name: 'POSTS',
         href: '/',
       },
       {
-        name: 'Archive',
+        name: 'ARCHIVE',
         href: '/archive',
       },
       {
-        name: 'Categories',
+        name: 'BUBBLES',
         href: '/categories',
       },
       {
-        name: 'About',
+        name: 'ABOUT',
         href: '/about',
       },
     ],
