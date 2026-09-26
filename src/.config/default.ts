@@ -9,7 +9,7 @@ export const defaultConfig: ThemeConfig = {
     subtitle: '流隙',
     author: '赵晟苏',
     description: '探索游戏本体/文化之间缝隙的实验阵地',
-    website: 'https://fluxfissures.vercel.app/',
+    website: 'https://fluxfissures.org/',
     pageSize: 5,
     socialLinks: [
     ],
@@ -31,7 +31,7 @@ export const defaultConfig: ThemeConfig = {
         href: '/about',
       },
     ],
-    categoryMap: [{ name: '胡适', path: 'hu-shi' }],
+    categoryMap: [],
     footer: [
       '© %year <a target="_blank" href="%website">%author</a>',
       'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
@@ -56,7 +56,7 @@ export const defaultConfig: ThemeConfig = {
     },
   },
   seo: {
-    twitter: '@moeyua13',
+    twitter: '',
     meta: [],
     link: [],
   },
