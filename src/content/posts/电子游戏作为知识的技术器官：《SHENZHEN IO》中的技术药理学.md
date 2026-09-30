@@ -3,7 +3,7 @@ title: 电子游戏作为知识的技术器官：《SHENZHEN IO》中的技术�
 pubDate: 2026-08-28
 categories: ['Articles']
 description: ''
-slug: 电子游戏作为知识的技术器官：《shenzhen-io》中的技术药理学
+slug: shenzhen-io-technical-pharmacology
 draft: false
 ---
 
