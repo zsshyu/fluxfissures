@@ -7,7 +7,7 @@ export const defaultConfig: ThemeConfig = {
   site: {
     title: 'Flux Fissures',
     subtitle: '流隙',
-    author: '赵晟苏',
+    author: 'Shyu',
     description: '探索游戏本体/文化之间缝隙的实验阵地',
     website: 'https://fluxfissures.org/',
     pageSize: 5,
